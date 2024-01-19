@@ -242,6 +242,7 @@ hr {
 }
 
 .footer_top {
+    width: 70%;
     padding-top: 100px;
     display: flex;
     justify-content: center;
