@@ -27,7 +27,11 @@
     padding: 150px 0px 250px 0;
 }
 
-
+.d-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .column_section {
     flex-direction: column;
@@ -65,6 +69,18 @@
     background-image: url(../img/whiteWave.svg);
 }
 
+.font_accent_color {
+    color: var(--discord-accent);
+}
+
+.p_relative {
+    position: relative;
+}
+
+.p_absolute {
+    position: absolute;
+}
+
 h1 {
     font-size: 3rem;
     font-weight: bold;
@@ -85,10 +101,6 @@ p {
     line-height: 1.5rem;
 }
 
-span {
-    padding: 0 1rem;
-}
-
 hr {
     width: 70%;
 }
@@ -97,28 +109,10 @@ hr {
 
 /* #region Debug rules */
 
-/* #region Sections debug rules */
-
-.debug .last_section_container {
-    height: 1000px;
-}
-
-.debug .section_obj3 {
-    width: 70%;
-    height: 90%;
-}
-
-.debug .section_obj3 {
-    background-color: var(--var-section_obj3);
-}
-
-/* #endregion Sections debug rules */
-
 /* #region Footer debug rules */
 
 .debug #site_footer {
     height: 700px;
-    background-color: var(--var-footer_bg);
 }
 
 .debug .footer_top {
@@ -132,13 +126,13 @@ hr {
     background-color: var(--var-footer_bottom);
 }
 
-.debug .footer_obj1 {
+/* .debug .footer_obj1 {
     height: 90%;
     background-color: var(--var-footer_obj1);
     border: 2px dashed black;
-}
+} */
 
-.debug .footer_obj2 {
+.debug .footer_list {
     height: 90%;
     background-color: var(--var-footer_obj2);
     border: 2px dashed white;
@@ -265,6 +259,11 @@ hr {
     width: 70%;
 }
 
+.star_img {
+    width: 75%;
+    top: -30%;
+}
+
 .btn_accent_color {
     background-color: var(--discord-accent);
     color: var(--discord-lighter);
@@ -275,6 +274,7 @@ hr {
 /* #region Footer */
 
 #site_footer {
+    background-color: var(--discord-dark);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -282,9 +282,21 @@ hr {
 }
 
 .footer_top {
+    padding-top: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-grow: 1;
+}
+
+.flag {
+    width: 15%;
 }
 
 .footer_bottom {
@@ -293,12 +305,13 @@ hr {
     align-items: center;
 }
 
-.footer_obj1 {
+.footer_list {
+    list-style: none;
     flex-grow: 1.2;
 }
 
 .footer_obj2 {
-    flex-grow: 1;
+    width: 20%;
 }
 
 .footer_obj3 {
