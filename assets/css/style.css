@@ -208,12 +208,13 @@ hr {
 
 .section_txt {
     color: var(--discord-dark);
-    width: 25%;
+    width: 23%;
 }
 
 .tech_section_txt {
     color: var(--discord-dark);
-    width: 70%;
+    width: 65%;
+    text-align: center;
 }
 
 .star_img {
