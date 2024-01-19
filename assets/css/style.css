@@ -29,7 +29,9 @@
 .d-flex {
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
     justify-content: flex-start;
+    gap: 1rem;
 }
 
 .column_section {
@@ -101,7 +103,7 @@ p {
 }
 
 hr {
-    color: var(--discord-lighter);
+    color: var(--discord-accent);
     width: 70%;
 }
 
@@ -185,8 +187,13 @@ hr {
     width: 100%;
 }
 
+.btn_container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
 .btn_mac_download {
-    margin-right: 0.5rem;
     padding: 0.7rem 1.5rem;
     font-size: 1rem;
 }
@@ -194,7 +201,6 @@ hr {
 .btn_open_in_browser {
     background-color: var(--discord-dark);
     color: var(--discord-lighter);
-    margin-left: 0.5rem;
     padding: 0.7rem 1.5rem;
     font-size: 1rem;
 }
