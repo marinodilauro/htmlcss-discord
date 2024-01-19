@@ -102,6 +102,7 @@ p {
 }
 
 hr {
+    color: var(--discord-lighter);
     width: 70%;
 }
 
@@ -125,12 +126,6 @@ hr {
     height: 10%;
     background-color: var(--var-footer_bottom);
 }
-
-/* .debug .footer_obj1 {
-    height: 90%;
-    background-color: var(--var-footer_obj1);
-    border: 2px dashed black;
-} */
 
 .debug .footer_list {
     height: 90%;
@@ -275,6 +270,7 @@ hr {
 
 #site_footer {
     background-color: var(--discord-dark);
+    color: var(--discord-lighter);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -285,7 +281,8 @@ hr {
     padding-top: 100px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    gap: 3rem;
 }
 
 .social {
@@ -299,23 +296,26 @@ hr {
     width: 15%;
 }
 
+.footer_list {
+    list-style: none;
+    flex-grow: 1.2;
+    font-size: 0.75rem;
+    line-height: 1.5rem;
+}
+
 .footer_bottom {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.footer_list {
-    list-style: none;
-    flex-grow: 1.2;
-}
-
-.footer_obj2 {
-    width: 20%;
-}
-
-.footer_obj3 {
+.sign_up {
+    padding: 0.5rem 0;
     display: flex;
+    flex-grow: 1;
+    align-items: center;
+    width: 30%;
+    justify-content: flex-end;
 }
 
 /* #endregion Footer */
