@@ -4,28 +4,32 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Public Sans', sans-serif;
+    /* border: 1px dashed black; */
 }
 
 :root {
+    --discord-primary: rgba(49, 97, 224, 1);
+    --discord-light: rgba(211, 211, 211, 1);
+    --discord-lighter: rgba(255, 255, 255, 1);
+    --discord-dark: rgba(35, 39, 42, 1);
     --var-header_bg: #ADD8E6;
     --var-header_obj: #DAA520;
     --var-banner_bg: #00008B;
     --var-banner_obj: #EE82EE;
-    --var-white_section: #FFFFFF;
-    --var-grey_section: #D3D3D3;
     --var-section_obj1: #1E90FF;
     --var-section_obj2: #FFC0CB;
     --var-section_obj3: #228B22;
-    --var-footer_bg: #23272A;
     --var-footer_obj1: #F08080;
     --var-footer_obj2: #20B2AA;
     --var-footer_bottom: #7FFFD4;
     --var-footer_obj3: #FFB6C1;
 }
 
-ul {
-    list-style-type: none;
+.container {
+    display: flex;
+    align-items: center;
+    width: 70%;
 }
 
 span {
@@ -39,19 +43,6 @@ hr {
 /* #endregion Utilities */
 
 /* #region Debug rules */
-
-/* #region Header debug rules */
-.debug #site_header {
-    height: 80px;
-    background-color: var(--var-header_bg);
-}
-
-.debug .header_obj {
-    background-color: var(--var-header_obj);
-    border: 2px dashed black;
-}
-
-/* #endregion Header debug rules */
 
 /* #region Banner debug rules */
 .debug .banner_container {
@@ -154,21 +145,24 @@ hr {
 /* #region Header */
 
 #site_header {
+    background-color: var(--discord-primary);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.header_obj {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 48px;
+.logo,
+.links,
+.login {
+    padding: 1.5rem 0;
 }
 
 .logo,
 .login {
-    width: 15%;
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    width: 25%;
 }
 
 .logo {
@@ -176,12 +170,28 @@ hr {
 }
 
 .links {
-    width: 40%;
-    gap: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    flex-grow: 1;
+    gap: 3rem;
+    color: var(--discord-lighter);
+    font-size: 0.9rem;
+    font-weight: 600;
 }
 
 .login {
     justify-content: flex-end;
+}
+
+.login_btn {
+    background-color: var(--discord-lighter);
+    color: var(--discord-dark);
+    padding: 0.5rem 0.7rem;
+    border: none;
+    border-radius: 1.25rem;
+    font-weight: bold;
 }
 
 /* #endregion Header */
@@ -197,18 +207,6 @@ hr {
 
 /* Main section */
 .main_section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.main_section_container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.last_section_container {
     display: flex;
     justify-content: center;
     align-items: center;
