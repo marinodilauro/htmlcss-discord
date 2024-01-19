@@ -186,8 +186,6 @@ hr {
 }
 
 .btn_mac_download {
-    background-color: var(--discord-lighter);
-    color: var(--discord-dark);
     margin-right: 0.5rem;
     padding: 0.7rem 1.5rem;
     font-size: 1rem;
