@@ -5,7 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Public Sans', sans-serif;
-    /* border: 1px dashed black; */
+    border: 1px dashed black;
 }
 
 :root {
@@ -14,25 +14,18 @@
     --discord-lighter: rgba(255, 255, 255, 1);
     --discord-dark: rgba(35, 39, 42, 1);
     --discord-accent: rgba(142, 161, 225, 1);
-    --var-header_bg: #ADD8E6;
-    --var-header_obj: #DAA520;
-    --var-banner_bg: #00008B;
-    --var-banner_obj: #EE82EE;
-    --var-section_obj1: #1E90FF;
-    --var-section_obj2: #FFC0CB;
-    --var-section_obj3: #228B22;
-    --var-footer_obj1: #F08080;
-    --var-footer_obj2: #20B2AA;
-    --var-footer_bottom: #7FFFD4;
-    --var-footer_obj3: #FFB6C1;
 }
 
 .container {
     display: flex;
     align-items: center;
     width: 70%;
+    justify-content: space-around;
 }
 
+.section_padding {
+    padding: 150px 0px 250px 0;
+}
 
 .btn {
     background-color: var(--discord-lighter);
@@ -42,9 +35,41 @@
     font-weight: 600;
 }
 
+.lighter_bg {
+    background-color: var(--discord-lighter);
+}
+
+.light_bg {
+    background-color: var(--discord-light);
+}
+
+.wave_bg {
+    background-repeat: no-repeat;
+    background-size: 100% 15%;
+    background-position: bottom;
+}
+
+.gray_wave {
+    background-image: url(../img/greyWave.svg);
+}
+
+.white_wave {
+    background-image: url(../img/whiteWave.svg);
+}
+
 h1 {
     font-size: 3rem;
     font-weight: bold;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+p {
+    line-height: 1.5rem;
 }
 
 span {
@@ -60,40 +85,14 @@ hr {
 /* #region Debug rules */
 
 /* #region Sections debug rules */
-.debug .main_section_container {
-    width: 70%;
-    height: 600px;
-}
 
 .debug .last_section_container {
     height: 1000px;
 }
 
-.white_bg {
-    background-color: var(--var-white_section);
-}
-
-.grey_bg {
-    background-color: var(--var-grey_section);
-}
-
-.debug .section_obj1,
-.section_obj2 {
-    height: 80%;
-    border: 2px dashed black;
-}
-
 .debug .section_obj3 {
     width: 70%;
     height: 90%;
-}
-
-.debug .section_obj1 {
-    background-color: var(--var-section_obj1);
-}
-
-.debug .section_obj2 {
-    background-color: var(--var-section_obj2);
 }
 
 .debug .section_obj3 {
@@ -154,7 +153,7 @@ hr {
 .logo,
 .links,
 .login {
-    padding: 1.5rem 0;
+    padding: 0.5rem 0;
 }
 
 .logo,
@@ -162,7 +161,7 @@ hr {
     display: flex;
     flex-grow: 1;
     align-items: center;
-    width: 25%;
+    width: 30%;
 }
 
 .logo {
@@ -171,13 +170,13 @@ hr {
 
 .links {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     list-style-type: none;
-    flex-grow: 1;
+    flex-grow: 3;
     gap: 3rem;
     color: var(--discord-lighter);
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     font-weight: 600;
 }
 
@@ -213,7 +212,6 @@ hr {
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    line-height: 1.5rem;
 }
 
 .banner {
@@ -244,12 +242,9 @@ hr {
     align-items: center;
 }
 
-.section_obj1 {
-    flex-grow: 1.5;
-}
-
-.section_obj2 {
-    flex-grow: 1;
+.section_txt {
+    color: var(--discord-dark);
+    width: 25%;
 }
 
 /* #endregion Main */
