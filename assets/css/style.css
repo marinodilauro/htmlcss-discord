@@ -44,7 +44,7 @@
     background-color: var(--discord-lighter);
     color: var(--discord-dark);
     border: none;
-    border-radius: 1.25rem;
+    border-radius: 1.5rem;
     font-weight: 600;
 }
 
@@ -103,7 +103,7 @@ p {
 }
 
 hr {
-    color: var(--discord-accent);
+    border-color: var(--discord-accent);
     width: 70%;
 }
 
@@ -278,6 +278,7 @@ hr {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    padding-bottom: 50px;
 }
 
 .sign_up {
